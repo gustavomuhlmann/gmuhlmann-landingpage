@@ -367,86 +367,68 @@ span {
 }
 
 
-/* Estilos responsivos para dispositivos móveis */
+/* Ajustes para dispositivos móveis */
 @media (max-width: 768px) {
   .header {
-    padding: 10px 5%;
-    flex-direction: column;
-    align-items: flex-start;
+    padding: 15px 5%; /* Ajusta o padding para dispositivos móveis */
+    flex-direction: column; /* Alinha os itens verticalmente */
+    align-items: center; /* Centraliza os itens horizontalmente */
+    position: relative; /* Remove a fixação para dispositivos móveis */
+    background: rgba(0, 0, 0, 0.9); /* Pode ajustar a opacidade do fundo se necessário */
   }
 
-  .navbar {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
+  .header .logo {
+    margin-bottom: 10px; /* Espaçamento abaixo da logo */
   }
 
-  .navbar a {
-    font-size: 14px;
-    margin: 5px 0;
+  .header .navbar {
+    display: flex; /* Exibe os links de navegação como flexbox */
+    flex-direction: column; /* Alinha os links verticalmente */
+    align-items: center; /* Centraliza os links horizontalmente */
   }
 
-  .contact {
-    align-self: flex-start;
-    font-size: 14px;
-    padding: 8px 16px;
-    margin-top: 10px;
+  .header .navbar a {
+    margin: 10px 0; /* Espaçamento entre os links de navegação */
   }
 
+  .header .contact {
+    margin-top: 15px; /* Espaçamento acima do botão de contato */
+  }
+}
+
+/* Ajustes adicionais para a seção home */
+@media (max-width: 768px) {
   .home {
-    flex-direction: column;
-    padding: 120px 5% 0;
+    margin-top: 20px; /* Ajusta a margem superior para compensar a altura do cabeçalho */
+    padding: 20px 5%; /* Ajusta o padding para reduzir o espaço interno */
+    flex-direction: column; /* Alinha os itens verticalmente */
+    min-height: auto; /* Remove a altura mínima para ajuste automático */
+  }
+
+  .home-content {
+    text-align: center; /* Centraliza o texto */
   }
 
   .home-content h3 {
-    font-size: 24px;
+    font-size: 24px; /* Reduz o tamanho da fonte do título menor */
   }
 
   .home-content h1 {
-    font-size: 28px;
+    font-size: 28px; /* Reduz o tamanho da fonte do título principal */
   }
 
   .home-content p {
-    font-size: 14px;
+    font-size: 14px; /* Reduz o tamanho da fonte do parágrafo */
   }
 
   .btn-box {
-    flex-direction: column;
-    width: auto;
-    gap: 1em;
+    flex-direction: column; /* Alinha os botões verticalmente */
+    width: auto; /* Ajusta a largura dos botões */
+    gap: 1em; /* Ajusta o espaçamento entre os botões */
   }
 
-  .home .img-box {
-    display: none;
-  }
-
+  .home .img-box,
   .about-img {
-    display: none;
+    display: none; /* Esconde as imagens se necessário */
   }
 }
-
-/* Ajustes para garantir que a seção home não fique oculta pelo header */
-@media (max-width: 768px) {
-  .header {
-    padding: 10px 5%;
-    flex-direction: column;
-    align-items: flex-start;
-    position: relative;
-    z-index: 100; /* Garante que o header esteja acima dos outros elementos */
-  }
-
-  .home {
-    margin-top: 5px; /* Adiciona margem superior para compensar a altura do header */
-    flex-direction: column;
-    padding: 50px 5% 0;
-  }
-}
-
-/* Ajustes para a seção home em dispositivos móveis */
-@media (max-width: 768px) {
-  .home {
-    padding-top: 20px; /* Ajuste conforme necessário */
-  }
-}
-

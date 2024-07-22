@@ -8,49 +8,104 @@
     list-style: none;
 }
 
-.header{
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    padding: 35px 12%;
-    background: rgba(0, 0, 0, 0.8);
-    backdrop-filter: blur(10px);
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    z-index: 100;
-}
+/*
+  Define o estilo do cabeçalho da página.
+  Este cabeçalho fixo na parte superior da tela possui fundo semitransparente e desfocado,
+  além de conteúdo centralizado e espaçado horizontalmente.
+*/
+.header {
+    position: fixed; /* Posicionamento fixo na tela */
+    top: 0; left: 0; /* Topo e canto esquerdo */
+    width: 100%; /* Largura total da tela */
+    padding: 35px 12%; /* Espaçamento interno */
+    background: rgba(0, 0, 0, 0.8); /* Fundo preto semitransparente */
+    backdrop-filter: blur(10px); /* Efeito blur no fundo */
+    display: flex; /* Layout flexbox */
+    justify-content: space-between; /* Distribuição horizontal com espaço */
+    align-items: center; /* Alinhamento vertical centralizado */
+    z-index: 100; /* Camada superior para sobreposição */
+  }
 
-.logo{
-    font-size: 25px;
-    color: white;
-    font-weight: 600;
-    transition: 0.3s ease;
-}
+/*
+  Define o estilo da logo marca.
+  A logo possui tamanho de fonte 25px, cor branca, peso 600 e transição suave de 0.3s.
+*/
+.logo {
+    font-size: 25px; /* Tamanho da fonte */
+    color: white; /* Cor branca */
+    font-weight: 600; /* Peso da fonte (negrito) */
+    transition: 0.3s ease; /* Transição suave de 0.3s */
+  }
+  
+/*
+  Define o estilo da logo marca no estado hover (quando o mouse passa por cima).
+  Ao passar o mouse, a logo muda para a cor vermelha, ganha sombra preta e um efeito de ampliação (scale).
+*/
+.logo:hover {
+    color: red; /* Cor vermelha no hover */
+    text-shadow: 0 0 25px black, 0 0 50px black; /* Sombra preta dupla no hover */
+    transform: scale(1.3); /* Aumenta o tamanho da logo em 1.3x no hover */
+  }
 
-.logo:hover{
+/*
+  Define o estilo default para elementos `<span>`.
+  Todos os elementos `<span>` terão a cor vermelha.
+*/
+span {
     color: red;
-    text-shadow: 0 0 25px black,
-                 0 0 50px black;
-    transform: scale(1.3);
-}
+  }
 
-span{
-    color: red;
-}
+/*
+  Define o estilo dos links âncora (a) dentro da classe ".navbar".
+  Os links terão cor branca, tamanho de fonte 18px, peso semibold (500), margem horizontal de 20px, 
+  um underline transparente de 3px que muda no hover, e transição suave de 0.3s.
+*/
+.navbar a {
+    color: white; /* Cor branca */
+    font-size: 18px; /* Tamanho da fonte */
+    font-weight: 500; /* Peso da fonte (semibold) */
+    margin: 0 20px; /* Margem horizontal */
+    border-bottom: 3px solid transparent; /* Underline transparente */
+    transition: 0.3s ease; /* Transição suave */
+  }
+  
 
-.navbar a{
-    color: white;
-    font-size: 18px;
-    font-weight: 500;
-    margin: 0 20px;
-    border-bottom: 3px solid transparent;
-    transition: 0.3s ease;
-}
-
+/*
+  Define o estilo dos links âncora (a) dentro da classe ".navbar" nos estados hover e active.
+  Quando o mouse passa por cima (hover) ou o link está ativo, a cor muda para vermelho e 
+  a linha de baixo se torna sólida vermelha (3px).
+*/
 .navbar a:hover,
-.navbar a.active{
-    color: red;
-    border-bottom: 3px solid red;
+.navbar a.active {
+  color: red; /* Cor vermelha no hover/active */
+  border-bottom: 3px solid red; /* Underline vermelho no hover/active */
 }
+
+
+/*
+  Define o estilo da classe ".contact".
+  Elementos com a classe ".contact" terão espaçamento interno, fundo branco, texto preto, 
+  borda transparente (2px), cantos arredondados (8px), tamanho de fonte 16px, espaçamento entre letras (1px), 
+  peso semibold (600) e transição suave de 0.3s.
+*/
+.contact {
+    padding: 10px 28px; /* Espaçamento interno */
+    background-color: white; /* Fundo branco */
+    color: black; /* Cor do texto preta */
+    border: 2px solid transparent; /* Borda transparente */
+    border-radius: 8px; /* Cantos arredondados */
+    font-size: 16px; /* Tamanho da fonte */
+    letter-spacing: 1px; /* Espaçamento entre letras */
+    font-weight: 600; /* Peso da fonte (semibold) */
+    transition: 0.3s ease; /* Transição suave */
+  }
+
+/*
+  Define o estilo da classe ".contact" no estado hover (quando o mouse passa por cima).
+  Ao passar o mouse, o fundo muda para vermelho, ganha sombra vermelha e o texto fica branco.
+*/
+.contact:hover {
+    background-color: red; /* Fundo vermelho no hover */
+    box-shadow: 0 0 25px red; /* Sombra vermelha no hover */
+    color: white; /* Cor do texto branca no hover */
+  }

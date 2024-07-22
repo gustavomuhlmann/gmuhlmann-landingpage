@@ -9,7 +9,10 @@
     /* border: 3px solid rgba(255, 0, 0, 0.5); /* Borda vermelha semitransparente utilizada pra teste e referencia */
   
 }
-
+/* Para definir comportamento de scroll suave */
+html {
+  scroll-behavior: smooth;
+}
 /*
   Define o estilo do cabeçalho da página.
   Este cabeçalho fixo na parte superior da tela possui fundo semitransparente e desfocado,

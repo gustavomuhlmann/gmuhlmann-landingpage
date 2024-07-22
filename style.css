@@ -6,7 +6,7 @@
     font-family: 'Poppins','Roboto',sans-serif;
     text-decoration: none;
     list-style: none;
-    border: 3px solid rgba(255, 0, 0, 0.5); /* Borda vermelha semitransparente utilizada pra teste e referencia */
+    /* border: 3px solid rgba(255, 0, 0, 0.5); /* Borda vermelha semitransparente utilizada pra teste e referencia */
   
 }
 
@@ -211,4 +211,154 @@ span {
 /* Estilos para o trilho da barra de rolagem no Webkit */
 ::-webkit-scrollbar-track {
   background-color: rgba(0, 0, 0, 0.6); /* Define a cor de fundo do trilho como preto semitransparente */
+  width: 50px;
+}
+
+/* Estilos para a seção sobre (about) */
+.about {
+  display: flex;                /* Define o layout como flexbox */
+  align-items: center;          /* Alinha os itens no centro verticalmente */
+  justify-content: center;      /* Alinha os itens no centro horizontalmente */
+  padding: 12% 8%;              /* Define o preenchimento superior/inferior e lateral */
+  gap: 10em;                    /* Define um espaço de 10em entre os itens flexíveis */
+  background: black;            /* Define a cor de fundo como preto */
+}
+
+/* Estilos para a imagem dentro da seção sobre (about) */
+.about-img img {
+  position: relative;           /* Define a posição como relativa para permitir o uso de posicionamento absoluto se necessário */
+  width: 550px;                 /* Define a largura da imagem como 550px */               /* Define a altura da imagem para ajustar automaticamente */
+  box-shadow: 0 0 25px red,     /* Define uma sombra externa com 25px de desfoque e cor vermelha */
+              0 0 50px red;     /* Define uma segunda sombra externa com 50px de desfoque e cor vermelha */
+  border-radius: 50%;           /* Define os cantos arredondados como círculo */
+}
+
+/* Estilos para os títulos dentro do conteúdo da seção sobre (about) */
+.about-content h2 {
+  color: white;                 /* Define a cor do texto como branco */
+  font-size: 42px;              /* Define o tamanho da fonte como 42px */
+  text-align: left;             /* Alinha o texto à esquerda */
+}
+
+.about-content h3 {
+  color: white;                 /* Define a cor do texto como branco */
+  font-size: 62px;              /* Define o tamanho da fonte como 62px */
+}
+
+/* Estilos para o parágrafo dentro do conteúdo da seção sobre (about) */
+.about-content p {
+  color: white;                 /* Define a cor do texto como branco */
+  font-size: 20px;              /* Define o tamanho da fonte como 20px */
+  margin: 2em 0 3em;            /* Define as margens superior, inferior e entre parágrafos */
+}
+
+/* Estilos para o formulário de contato */
+.contact-form h2 {
+  text-align: center;           /* Alinha o texto ao centro */
+  margin-top: 3em;              /* Define a margem superior como 3em */
+  margin-bottom: 1em;           /* Define a margem inferior como 1em */
+  font-size: 36px;              /* Define o tamanho da fonte como 36px */
+}
+
+/* Estilos para o formulário dentro da seção de contato */
+.contact-form form {
+  max-width: 50em;              /* Define a largura máxima do formulário como 50em */
+  margin: 1rem auto;            /* Define a margem superior/inferior como 1rem e centraliza horizontalmente */
+  text-align: center;           /* Alinha o texto ao centro */
+  margin-bottom: 3em;           /* Define a margem inferior como 3em */
+}
+
+/* Estilos para os campos de entrada e textarea dentro do formulário de contato */
+.contact-form form .input-box {
+  display: flex;                /* Define o layout como flexbox */
+  justify-content: center;      /* Alinha os itens no centro horizontalmente */
+  flex-wrap: wrap;              /* Permite que os itens quebrem para a linha seguinte se necessário */
+}
+
+.contact-form form .input-box input,
+.contact-form form textarea {
+  width: 100%;                  /* Define a largura como 100% do contêiner pai */
+  padding: 1.5em;               /* Define o preenchimento interno como 1.5em */
+  font-size: 18px;              /* Define o tamanho da fonte como 18px */
+  color: black;                 /* Define a cor do texto como preto */
+  border-radius: .8rem;         /* Define os cantos arredondados com 0.8rem */
+  background-color: rgb(241, 241, 241); /* Define a cor de fundo como um tom claro de cinza */
+  margin: 1rem 0;               /* Define as margens superior e inferior como 1rem */
+  resize: none;                 /* Remove a opção de redimensionamento do textarea */
+}
+/* Estilos para o rodapé (footer) */
+.footer {
+  position: relative;           /* Define a posição como relativa para permitir o posicionamento interno */
+  bottom: 0;                    /* Posiciona o rodapé na parte inferior do contêiner pai */
+  width: 100%;                  /* Define a largura como 100% do contêiner pai */
+  padding: 40px 0;              /* Define o preenchimento superior e inferior como 40px */
+  background-color: black;      /* Define a cor de fundo como preto */
+}
+
+/* Estilos para a seção de redes sociais dentro do rodapé */
+.footer .social {
+  text-align: center;           /* Alinha o texto ao centro */
+  padding-bottom: 25px;         /* Define o preenchimento inferior como 25px */
+  color: white;                 /* Define a cor do texto como branco */
+}
+
+/* Estilos para os links de redes sociais dentro do rodapé */
+.footer .social a {
+  font-size: 24px;              /* Define o tamanho da fonte como 24px */
+  color: white;                 /* Define a cor do texto como branco */
+  border: 2px solid red;        /* Define a borda com 2px e cor vermelha */
+  text-align: center;           /* Alinha o texto ao centro */
+  width: 40px;                  /* Define a largura como 40px */
+  height: 40px;                 /* Define a altura como 40px */
+  line-height: 38px;            /* Define a altura da linha como 38px */
+  display: inline-block;        /* Define o display como bloco inline */
+  text-align: center;           /* Alinha o texto ao centro */
+  border-radius: 50%;           /* Define os cantos arredondados como círculo */
+  margin: 0 8px;                /* Define as margens laterais como 8px */
+  box-shadow: 0 0 10px red,     /* Define uma sombra externa com 10px de desfoque e cor vermelha */
+              0 0 10px red;     /* Define uma segunda sombra externa com 10px de desfoque e cor vermelha */
+  transition: 0.3s ease;        /* Define a transição suave de 0.3s */
+}
+
+/* Estilos para os links de redes sociais no estado hover */
+.footer .social a:hover {
+  transform: scale(1.2) translateY(-10px); /* Aumenta o tamanho e move o link para cima no hover */
+  color: red;                           /* Define a cor do texto como vermelho */
+  border: 2px solid red;                /* Define a borda como 2px e cor vermelha */
+}
+
+/* Estilos para a lista dentro do rodapé */
+.footer ul {
+  margin-top: 0;                     /* Define a margem superior como 0 */
+  padding: 0;                        /* Define o preenchimento como 0 */
+  font-size: 18px;                   /* Define o tamanho da fonte como 18px */
+  line-height: 1.6;                  /* Define a altura da linha como 1.6 */
+  margin-bottom: 0;                  /* Define a margem inferior como 0 */
+  text-align: center;                /* Alinha o texto ao centro */
+}
+
+/* Estilos para os links dentro da lista do rodapé */
+.footer ul li a {
+  color: white;                     /* Define a cor do texto como branco */
+  border-bottom: 3px solid transparent; /* Define a borda inferior como 3px e cor transparente */
+  transition: 0.3s ease;            /* Define a transição suave de 0.3s */
+}
+
+/* Estilos para os links dentro da lista no estado hover */
+.footer ul li a:hover {
+  border-bottom: 3px solid red;    /* Define a borda inferior como 3px e cor vermelha no hover */
+}
+
+/* Estilos para os itens da lista dentro do rodapé */
+.footer ul li {
+  display: inline-block;           /* Define o display como bloco inline */
+  padding: 0 15px;                /* Define o preenchimento lateral como 15px */
+}
+
+/* Estilos para a seção de copyright dentro do rodapé */
+.footer .copyright {
+  margin-top: 15px;               /* Define a margem superior como 15px */
+  text-align: center;             /* Alinha o texto ao centro */
+  font-size: 12px;                /* Define o tamanho da fonte como 12px */
+  color: white;                   /* Define a cor do texto como branco */
 }

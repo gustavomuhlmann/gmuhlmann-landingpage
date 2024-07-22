@@ -432,3 +432,11 @@ span {
     display: none; /* Esconde as imagens se necessário */
   }
 }
+
+/* Estilos para dispositivos móveis */
+@media (max-width: 768px) {
+  .contact-form {
+    padding-left: 16px; /* Ajuste o valor conforme necessário */
+    padding-right: 16px; /* Ajuste o valor conforme necessário */
+  }
+}

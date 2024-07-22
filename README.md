@@ -16,6 +16,10 @@ As a programming enthusiast, not a professional web developer, I am committed to
 - Includes sections for contact information and professional experiences
 - Built using HTML and CSS with a focus on clean and maintainable code
 
+## Example
+
+You can view the live version of this landing page [here](https://gustavomuhlmann.github.io/first-personal-lp/).
+
 ## Getting Started
 
 To view or modify this project, you can clone the repository using the following command:

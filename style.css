@@ -6,6 +6,8 @@
     font-family: 'Poppins','Roboto',sans-serif;
     text-decoration: none;
     list-style: none;
+    border: 3px solid rgba(255, 0, 0, 0.5); /* Borda vermelha semitransparente utilizada pra teste e referencia */
+  
 }
 
 /*
@@ -109,3 +111,43 @@ span {
     box-shadow: 0 0 25px red; /* Sombra vermelha no hover */
     color: white; /* Cor do texto branca no hover */
   }
+  
+/* Estilos para a seção home */
+.home {
+  width: 100%;                  /* Define a largura como 100% do contêiner pai */
+  min-height: 100vh;            /* Define a altura mínima como 100% da altura da viewport */
+  background: rgb(241, 241, 241); /* Define a cor de fundo como um tom claro de cinza */
+  display: flex;                /* Define o layout como flexbox */
+  align-items: center;          /* Alinha os itens no centro verticalmente */
+  gap: 7em;                     /* Define um espaço de 7em entre os itens flexíveis */
+  padding: 3px 12% 0;           /* Define o preenchimento superior, esquerdo e direito */
+}
+
+/* Estilos para o conteúdo da seção home */
+.home-content {
+  max-width: 100%;              /* Define a largura máxima como 100% do contêiner pai */
+}
+
+/* Estilos para o título menor dentro do conteúdo da seção home */
+.home-content h3 {
+  font-size: 42px;              /* Define o tamanho da fonte como 42px */
+}
+
+/* Estilos para o título principal dentro do conteúdo da seção home */
+.home-content h1 {
+  font-size: 42px;              /* Define o tamanho da fonte como 42px */
+  line-height: 1.2;             /* Define a altura da linha como 1.2 */
+}
+
+/* Estilos para o parágrafo dentro do conteúdo da seção home */
+.home-content p {
+  font-size: 18px;              /* Define o tamanho da fonte como 18px */
+  margin: 25px 0 30px;          /* Define as margens superior, inferior e entre os parágrafos */
+}
+
+/* Estilos para a caixa de botões */
+.btn-box {
+  width: 345px;                 /* Define a largura como 345px */
+  display: flex;                /* Define o layout como flexbox */
+  gap: 2em;                     /* Define um espaço de 2em entre os botões */
+}

@@ -123,7 +123,7 @@ span {
   display: flex;                /* Define o layout como flexbox */
   align-items: center;          /* Alinha os itens no centro verticalmente */
   gap: 7em;                     /* Define um espaço de 7em entre os itens flexíveis */
-  padding: 3px 12% 0;           /* Define o preenchimento superior, esquerdo e direito */
+  padding: 150px 12% 0;           /* Define o preenchimento superior, esquerdo e direito */
 }
 
 /* Estilos para o conteúdo da seção home */
@@ -365,3 +365,88 @@ span {
   font-size: 12px;                /* Define o tamanho da fonte como 12px */
   color: white;                   /* Define a cor do texto como branco */
 }
+
+
+/* Estilos responsivos para dispositivos móveis */
+@media (max-width: 768px) {
+  .header {
+    padding: 10px 5%;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .navbar {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .navbar a {
+    font-size: 14px;
+    margin: 5px 0;
+  }
+
+  .contact {
+    align-self: flex-start;
+    font-size: 14px;
+    padding: 8px 16px;
+    margin-top: 10px;
+  }
+
+  .home {
+    flex-direction: column;
+    padding: 120px 5% 0;
+  }
+
+  .home-content h3 {
+    font-size: 24px;
+  }
+
+  .home-content h1 {
+    font-size: 28px;
+  }
+
+  .home-content p {
+    font-size: 14px;
+  }
+
+  .btn-box {
+    flex-direction: column;
+    width: auto;
+    gap: 1em;
+  }
+
+  .home .img-box {
+    display: none;
+  }
+
+  .about-img {
+    display: none;
+  }
+}
+
+/* Ajustes para garantir que a seção home não fique oculta pelo header */
+@media (max-width: 768px) {
+  .header {
+    padding: 10px 5%;
+    flex-direction: column;
+    align-items: flex-start;
+    position: relative;
+    z-index: 100; /* Garante que o header esteja acima dos outros elementos */
+  }
+
+  .home {
+    margin-top: 5px; /* Adiciona margem superior para compensar a altura do header */
+    flex-direction: column;
+    padding: 50px 5% 0;
+  }
+}
+
+/* Ajustes para a seção home em dispositivos móveis */
+@media (max-width: 768px) {
+  .home {
+    padding-top: 20px; /* Ajuste conforme necessário */
+  }
+}
+

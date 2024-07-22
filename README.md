@@ -18,7 +18,7 @@ As a programming enthusiast, not a professional web developer, I am committed to
 
 ## Example
 
-You can view the live version of this landing page [here](https://gustavomuhlmann.github.io/first-personal-lp/).
+You can view the live version of this landing page [HERE](https://gustavomuhlmann.github.io/gmuhlmann-landingpage/).
 
 ## Getting Started
 
